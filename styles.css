@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-color: var(--very-pale-blue);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border-radius: 10px;
+ 
+}
+
+.box {
+  border-radius: 10px;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+}
+
+
+.ordersummary {
+  text-align: center;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.ordersummary h3 {
+  color: var(--dark-blue);
+  padding: 13px;
+  font-weight: 900;
+}
+
+.ordersummary p {
+  color: var(--desaturated-blue);
+}
+
+.annualplan {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--very-pale-blue);
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 13px;
+}
+
+.annualplan p {
+  color: var(--desaturated-blue);
+  padding-top: 8px;
+}
+.insideannual {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.insideannual__plan {
+  padding-left: 10px;
+}
+
+.annualplan span {
+  font-weight: bold;
+}
+
+.change {
+  cursor: pointer;
+}
+
+.change p {
+  text-decoration: underline;
+  color: var(--bright-blue);
+}
+
+.change p:hover {
+  text-decoration: none;
+  color: hsl(245deg 100% 75%);
+}
+
+.proceedpayment {
+  text-align: center; 
+  padding-bottom: 15px;
+  
+}
+
+.proceedpayment button {
+  background-color: var(--bright-blue);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 13px;
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 15px;
+  margin: 15px 15px 15px 15px;
+  display: block;
+  width: 320px;
+}
+
+.proceedpayment button:hover {
+  background-color: hsl(245deg 100% 75%);
+}
+
+.proceedpayment p {
+  font-size: 13px;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.proceedpayment p:hover {
+  color: var(--dark-blue);
+}
